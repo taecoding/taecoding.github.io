@@ -1,0 +1,26 @@
+{
+	"tae-form-text": {
+		"prefix": "tae-form-text",
+		"body": [
+			"<div class=\"form-group row\">",
+			"\t<label for=\"${1:name1}\" class=\"col-sm-2 col-form-label\">${1/(.*)/${1:/capitalize}/} </label>",
+			"\t<input type=\"text\" name=\"$1\" id=\"$1\" class=\"col-sm-8 form-control\" ",
+			"\t\tplaceholder=\"${1/(.*)/${1:/capitalize}/}\">",
+			"</div>",
+			"$0"
+		],
+		"description": "bootstrap form text"
+	},
+	"tae-form-textarea": {
+		"prefix": "tae-form-textarea",
+		"body": [
+			"<div class=\"form-group row\">",
+			"\t<label for=\"${1:message}\" class=\"col-sm-2 col-form-label\">${1/(.*)/${1:/capitalize}/}</label>",
+			"\t<textarea class=\"col-sm-8 form-control\" name=\"message\" id=\"message\"",
+			"\t\trows=\"3\" placeholder=\"${1/(.*)/${1:/capitalize}/}\"></textarea>",
+			"</div>",
+			"$0"
+		],
+		"description": "bootstrap form textarea"
+	}
+}

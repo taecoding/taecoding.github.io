@@ -1,0 +1,3 @@
+np.savetxt('test.csv', x, delimiter=',') 
+cat test.csv | base64
+cat file | base64 --decode > some.csv

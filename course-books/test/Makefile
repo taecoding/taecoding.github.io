@@ -1,0 +1,2 @@
+build:
+	gitbook build . ../test

@@ -1,0 +1,624 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2. knapsakc · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.partition.html" />
+    
+    
+    <link rel="prev" href="1.subproblem.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    [u1. Greedy Algo]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../u1/0.greedy.html">
+            
+                <a href="../u1/0.greedy.html">
+            
+                    
+                    u1 Greedy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../u1/1.activity.html">
+            
+                <a href="../u1/1.activity.html">
+            
+                    
+                    u1 Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../u1/2.kruskal.html">
+            
+                <a href="../u1/2.kruskal.html">
+            
+                    
+                    u1 Kruskal's MST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../u1/3.prim.html">
+            
+                <a href="../u1/3.prim.html">
+            
+                    
+                    u1 prim's MST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../u1/4.dijkstra.html">
+            
+                <a href="../u1/4.dijkstra.html">
+            
+                    
+                    u1 dijkstra
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    [u2. Dynamic Programming]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="0.dp.html">
+            
+                <a href="0.dp.html">
+            
+                    
+                    0. Dynamic Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="1.subproblem.html">
+            
+                <a href="1.subproblem.html">
+            
+                    
+                    1. subproblem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="2.knapsack.html">
+            
+                <a href="2.knapsack.html">
+            
+                    
+                    2. knapsakc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="3.partition.html">
+            
+                <a href="3.partition.html">
+            
+                    
+                    3. partition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="4.subsetSum.html">
+            
+                <a href="4.subsetSum.html">
+            
+                    
+                    4. subsetSum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2. knapsakc</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="introduction">Introduction</h1>
+<p>Given the weights and profits of &#x2018;N&#x2019; items, we are asked to put these items in a knapsack which has a capacity &#x2018;C&#x2019;. The goal is to get the maximum profit from the items in the knapsack. Each item can only be selected once, as we don&#x2019;t have multiple quantities of any item.</p>
+<p>Let&#x2019;s take the example of Merry, who wants to carry some fruits in the knapsack to get maximum profit. Here are the weights and profits of the fruits:</p>
+<pre><code>Items: { Apple, Orange, Banana, Melon }
+Weights: { 2, 3, 1, 4 }
+Profits: { 4, 5, 3, 7 }
+Knapsack capacity: 5
+</code></pre><p>Let&#x2019;s try to put different combinations of fruits in the knapsack, such that their total weight is not more than 5:</p>
+<pre><code>Apple + Orange (total weight 5) =&gt; 9 profit
+Apple + Banana (total weight 3) =&gt; 7 profit
+Orange + Banana (total weight 4) =&gt; 8 profit
+Banana + Melon (total weight 5) =&gt; 10 profit
+</code></pre><p>This shows that Banana + Melon is the best combination, as it gives us the maximum profit and the total weight does not exceed the capacity.</p>
+<h1 id="problem-statement">Problem Statement</h1>
+<p>Given two integer arrays to represent weights and profits of &#x2018;N&#x2019; items, we need to find a subset of these items which will give us maximum profit such that their cumulative weight is not more than a given number &#x2018;C&#x2019;. Each item can only be selected once, which means either we put an item in the knapsack or we skip it.</p>
+<h2 id="basic-solution">Basic Solution</h2>
+<p>A basic brute-force solution could be to try all combinations of the given items (as we did above), allowing us to choose the one with maximum profit and a weight that doesn&#x2019;t exceed &#x2018;C&#x2019;. Take the example of four items (A, B, C, and D), as shown in the diagram below. To try all the combinations, our algorithm will look like:</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Knapsack</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">solveKnapsack</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] profits, <span class="hljs-keyword">int</span>[] weights, <span class="hljs-keyword">int</span> capacity)</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.knapsackRecursive(profits, weights, capacity, <span class="hljs-number">0</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> <span class="hljs-title">knapsackRecursive</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] profits, <span class="hljs-keyword">int</span>[] weights, <span class="hljs-keyword">int</span> capacity, <span class="hljs-keyword">int</span> currentIndex)</span> </span>{
+    <span class="hljs-comment">// base checks</span>
+    <span class="hljs-keyword">if</span> (capacity &lt;= <span class="hljs-number">0</span> || currentIndex &gt;= profits.length)
+      <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+
+    <span class="hljs-comment">// recursive call after choosing the element at the currentIndex</span>
+    <span class="hljs-comment">// if the weight of the element at currentIndex exceeds the capacity, we shouldn&apos;t process this</span>
+    <span class="hljs-keyword">int</span> profit1 = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">if</span>( weights[currentIndex] &lt;= capacity )
+        profit1 = profits[currentIndex] + knapsackRecursive(profits, weights,
+                capacity - weights[currentIndex], currentIndex + <span class="hljs-number">1</span>);
+
+    <span class="hljs-comment">// recursive call after excluding the element at the currentIndex</span>
+    <span class="hljs-keyword">int</span> profit2 = knapsackRecursive(profits, weights, capacity, currentIndex + <span class="hljs-number">1</span>);
+
+    <span class="hljs-keyword">return</span> Math.max(profit1, profit2);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Knapsack ks = <span class="hljs-keyword">new</span> Knapsack();
+    <span class="hljs-keyword">int</span>[] profits = {<span class="hljs-number">1</span>, <span class="hljs-number">6</span>, <span class="hljs-number">10</span>, <span class="hljs-number">16</span>};
+    <span class="hljs-keyword">int</span>[] weights = {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>};
+    <span class="hljs-keyword">int</span> maxProfit = ks.solveKnapsack(profits, weights, <span class="hljs-number">7</span>);
+    System.out.println(<span class="hljs-string">&quot;Total knapsack profit ---&gt; &quot;</span> + maxProfit);
+    maxProfit = ks.solveKnapsack(profits, weights, <span class="hljs-number">6</span>);
+    System.out.println(<span class="hljs-string">&quot;Total knapsack profit ---&gt; &quot;</span> + maxProfit);
+  }
+}
+</code></pre>
+<h1 id="top-down-dynamic-programming-with-memoization">Top-down Dynamic Programming with Memoization</h1>
+<p>We can use memoization to overcome the overlapping sub-problems. To reiterate, memoization is when we store the results of all the previously solved sub-problems and return the results from memory if we encounter a problem that has already been solved.</p>
+<p>Since we have two changing values (capacity and currentIndex) in our recursive function knapsackRecursive(), we can use a two-dimensional array to store the results of all the solved sub-problems. As mentioned above, we need to store results for every sub-array (i.e. for every possible index &#x2018;i&#x2019;) and for every possible capacity &#x2018;c&#x2019;.</p>
+<p>Code
+Here is the code with memoization (see the changes in the highlighted lines):</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Knapsack</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">solveKnapsack</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] profits, <span class="hljs-keyword">int</span>[] weights, <span class="hljs-keyword">int</span> capacity)</span> </span>{
+    Integer[][] dp = <span class="hljs-keyword">new</span> Integer[profits.length][capacity + <span class="hljs-number">1</span>];
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.knapsackRecursive(dp, profits, weights, capacity, <span class="hljs-number">0</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> <span class="hljs-title">knapsackRecursive</span><span class="hljs-params">(Integer[][] dp, <span class="hljs-keyword">int</span>[] profits, <span class="hljs-keyword">int</span>[] weights, <span class="hljs-keyword">int</span> capacity,
+      <span class="hljs-keyword">int</span> currentIndex)</span> </span>{
+
+    <span class="hljs-comment">// base checks</span>
+    <span class="hljs-keyword">if</span> (capacity &lt;= <span class="hljs-number">0</span> || currentIndex &gt;= profits.length)
+      <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+
+    <span class="hljs-comment">// if we have already solved a similar problem, return the result from memory</span>
+    <span class="hljs-keyword">if</span>(dp[currentIndex][capacity] != <span class="hljs-keyword">null</span>)
+      <span class="hljs-keyword">return</span> dp[currentIndex][capacity];
+
+    <span class="hljs-comment">// recursive call after choosing the element at the currentIndex</span>
+    <span class="hljs-comment">// if the weight of the element at currentIndex exceeds the capacity, we shouldn&apos;t process this</span>
+    <span class="hljs-keyword">int</span> profit1 = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">if</span>( weights[currentIndex] &lt;= capacity )
+        profit1 = profits[currentIndex] + knapsackRecursive(dp, profits, weights,
+                capacity - weights[currentIndex], currentIndex + <span class="hljs-number">1</span>);
+
+    <span class="hljs-comment">// recursive call after excluding the element at the currentIndex</span>
+    <span class="hljs-keyword">int</span> profit2 = knapsackRecursive(dp, profits, weights, capacity, currentIndex + <span class="hljs-number">1</span>);
+
+    dp[currentIndex][capacity] = Math.max(profit1, profit2);
+    <span class="hljs-keyword">return</span> dp[currentIndex][capacity];
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Knapsack ks = <span class="hljs-keyword">new</span> Knapsack();
+    <span class="hljs-keyword">int</span>[] profits = {<span class="hljs-number">1</span>, <span class="hljs-number">6</span>, <span class="hljs-number">10</span>, <span class="hljs-number">16</span>};
+    <span class="hljs-keyword">int</span>[] weights = {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>};
+    <span class="hljs-keyword">int</span> maxProfit = ks.solveKnapsack(profits, weights, <span class="hljs-number">7</span>);
+    System.out.println(<span class="hljs-string">&quot;Total knapsack profit ---&gt; &quot;</span> + maxProfit);
+    maxProfit = ks.solveKnapsack(profits, weights, <span class="hljs-number">6</span>);
+    System.out.println(<span class="hljs-string">&quot;Total knapsack profit ---&gt; &quot;</span> + maxProfit);
+  }
+}
+</code></pre>
+<h1 id="bottom-up-dynamic-programming">Bottom-up Dynamic Programming</h1>
+<p>Let&#x2019;s try to populate our dp[][] array from the above solution, working in a bottom-up fashion. Essentially, we want to find the maximum profit for every sub-array and for every possible capacity. This means, dp[i][c] will represent the maximum knapsack profit for capacity &#x2018;c&#x2019; calculated from the first &#x2018;i&#x2019; items.</p>
+<p>So, for each item at index &#x2018;i&#x2019; (0 &lt;= i &lt; items.length) and capacity &#x2018;c&#x2019; (0 &lt;= c &lt;= capacity), we have two options:</p>
+<p>Exclude the item at index &#x2018;i&#x2019;. In this case, we will take whatever profit we get from the sub-array excluding this item =&gt; dp[i-1][c]
+Include the item at index &#x2018;i&#x2019; if its weight is not more than the capacity. In this case, we include its profit plus whatever profit we get from the remaining capacity and from remaining items =&gt; profit[i] + dp[i-1][c-weight[i]]
+Finally, our optimal solution will be maximum of the above two values:</p>
+<pre><code>dp[i][c] = max (dp[i-1][c], profit[i] + dp[i-1][c-weight[i]]) 
+</code></pre><p>Let&#x2019;s visually draw this and start with our base case of zero capacity:</p>
+<pre><code>class Knapsack {
+
+  public int solveKnapsack(int[] profits, int[] weights, int capacity) {
+    // basic checks
+    if (capacity &lt;= 0 || profits.length == 0 || weights.length != profits.length)
+      return 0;
+
+    int n = profits.length;
+    int[][] dp = new int[n][capacity + 1];
+
+    // populate the capacity=0 columns, with &apos;0&apos; capacity we have &apos;0&apos; profit
+    for(int i=0; i &lt; n; i++)
+      dp[i][0] = 0;
+
+    // if we have only one weight, we will take it if it is not more than the capacity
+    for(int c=0; c &lt;= capacity; c++) {
+      if(weights[0] &lt;= c)
+        dp[0][c] = profits[0];
+    }
+
+    // process all sub-arrays for all the capacities
+    for(int i=1; i &lt; n; i++) {
+      for(int c=1; c &lt;= capacity; c++) {
+        int profit1= 0, profit2 = 0;
+        // include the item, if it is not more than the capacity
+        if(weights[i] &lt;= c)
+          profit1 = profits[i] + dp[i-1][c-weights[i]];
+        // exclude the item
+        profit2 = dp[i-1][c];
+        // take maximum
+        dp[i][c] = Math.max(profit1, profit2);
+      }
+    }
+
+    // maximum profit will be at the bottom-right corner.
+    return dp[n-1][capacity];
+  }
+
+  public static void main(String[] args) {
+    Knapsack ks = new Knapsack();
+    int[] profits = {1, 6, 10, 16};
+    int[] weights = {1, 2, 3, 5};
+    int maxProfit = ks.solveKnapsack(profits, weights, 7);
+    System.out.println(&quot;Total knapsack profit ---&gt; &quot; + maxProfit);
+    maxProfit = ks.solveKnapsack(profits, weights, 6);
+    System.out.println(&quot;Total knapsack profit ---&gt; &quot; + maxProfit);
+  }
+}
+</code></pre><h2 id="how-to-find-the-selected-items">How to find the selected items?</h2>
+<p>As we know that the final profit is at the bottom-right corner; therefore we will start from there to find the items that will be going in the knapsack.</p>
+<p>As you remember, at every step we had two options: include an item or skip it. If we skip an item, then we take the profit from the remaining items (i.e. from the cell right above it); if we include the item, then we jump to the remaining profit to find more items.</p>
+<p>Let&#x2019;s understand this from the above example:</p>
+<pre><code>import java.util.*;
+
+class Knapsack {
+
+  public int solveKnapsack(int[] profits, int[] weights, int capacity) {
+    // base checks
+    if (capacity &lt;= 0 || profits.length == 0 || weights.length != profits.length)
+      return 0;
+
+    int n = profits.length;
+    int[][] dp = new int[n][capacity + 1];
+
+    // populate the capacity=0 columns, with &apos;0&apos; capacity we have &apos;0&apos; profit
+    for(int i=0; i &lt; n; i++)
+      dp[i][0] = 0;
+
+    // if we have only one weight, we will take it if it is not more than the capacity
+    for(int c=0; c &lt;= capacity; c++) {
+      if(weights[0] &lt;= c)
+        dp[0][c] = profits[0];
+    }
+
+    // process all sub-arrays for all the capacities
+    for(int i=1; i &lt; n; i++) {
+      for(int c=1; c &lt;= capacity; c++) {
+        int profit1= 0, profit2 = 0;
+        // include the item, if it is not more than the capacity
+        if(weights[i] &lt;= c)
+          profit1 = profits[i] + dp[i-1][c-weights[i]];
+        // exclude the item
+        profit2 = dp[i-1][c];
+        // take maximum
+        dp[i][c] = Math.max(profit1, profit2);
+      }
+    }
+
+    printSelectedElements(dp, weights, profits, capacity);
+    // maximum profit will be at the bottom-right corner.
+    return dp[n-1][capacity];
+  }
+
+ private void printSelectedElements(int dp[][], int[] weights, int[] profits, int capacity){
+   System.out.print(&quot;Selected weights:&quot;);
+   int totalProfit = dp[weights.length-1][capacity];
+   for(int i=weights.length-1; i &gt; 0; i--) {
+     if(totalProfit != dp[i-1][capacity]) {
+       System.out.print(&quot; &quot; + weights[i]);
+       capacity -= weights[i];
+       totalProfit -= profits[i];
+     }
+   }
+
+   if(totalProfit != 0)
+     System.out.print(&quot; &quot; + weights[0]);
+   System.out.println(&quot;&quot;);
+ }
+
+  public static void main(String[] args) {
+    Knapsack ks = new Knapsack();
+    int[] profits = {1, 6, 10, 16};
+    int[] weights = {1, 2, 3, 5};
+    int maxProfit = ks.solveKnapsack(profits, weights, 7);
+    System.out.println(&quot;Total knapsack profit ---&gt; &quot; + maxProfit);
+    maxProfit = ks.solveKnapsack(profits, weights, 6);
+    System.out.println(&quot;Total knapsack profit ---&gt; &quot; + maxProfit);
+  }
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.subproblem.html" class="navigation navigation-prev " aria-label="Previous page: 1. subproblem">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3.partition.html" class="navigation navigation-next " aria-label="Next page: 3. partition">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2. knapsakc","level":"1.3.3","depth":2,"next":{"title":"3. partition","level":"1.3.4","depth":2,"path":"u2/3.partition.md","ref":"u2/3.partition.md","articles":[]},"previous":{"title":"1. subproblem","level":"1.3.2","depth":2,"path":"u2/1.subproblem.md","ref":"u2/1.subproblem.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"u2/2.knapsack.md","mtime":"2019-05-12T02:10:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-19T00:41:40.603Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

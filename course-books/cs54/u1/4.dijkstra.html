@@ -1,0 +1,469 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>u1 dijkstra · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="3.prim.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    [u1. Greedy Algo]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="0.greedy.html">
+            
+                <a href="0.greedy.html">
+            
+                    
+                    u1 Greedy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.activity.html">
+            
+                <a href="1.activity.html">
+            
+                    
+                    u1 Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="2.kruskal.html">
+            
+                <a href="2.kruskal.html">
+            
+                    
+                    u1 Kruskal's MST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="3.prim.html">
+            
+                <a href="3.prim.html">
+            
+                    
+                    u1 prim's MST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="4.dijkstra.html">
+            
+                <a href="4.dijkstra.html">
+            
+                    
+                    u1 dijkstra
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    [u2. Dynamic Programming]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../u2/0.dp.html">
+            
+                <a href="../u2/0.dp.html">
+            
+                    
+                    0. Dynamic Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../u2/1.subproblem.html">
+            
+                <a href="../u2/1.subproblem.html">
+            
+                    
+                    1. subproblem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../u2/2.knapsack.html">
+            
+                <a href="../u2/2.knapsack.html">
+            
+                    
+                    2. knapsakc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../u2/3.partition.html">
+            
+                <a href="../u2/3.partition.html">
+            
+                    
+                    3. partition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../u2/4.subsetSum.html">
+            
+                <a href="../u2/4.subsetSum.html">
+            
+                    
+                    4. subsetSum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >u1 dijkstra</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="dijkstras-spt">Dijkstra&apos;s SPT</h1>
+<h2 id="mindistance-given-dist-sptset">minDistance given dist[], sptSet[]</h2>
+<pre><code class="lang-java"><span class="hljs-comment">// A utility function to find the vertex with minimum distance value, </span>
+<span class="hljs-comment">// from the set of vertices not yet included in shortest path tree </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">minDistance</span><span class="hljs-params">(<span class="hljs-keyword">int</span> dist[], Boolean sptSet[])</span> 
+</span>{ 
+    <span class="hljs-comment">// Initialize min value </span>
+    <span class="hljs-keyword">int</span> min = Integer.MAX_VALUE, min_index=-<span class="hljs-number">1</span>; 
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> v = <span class="hljs-number">0</span>; v &lt; V; v++) 
+        <span class="hljs-keyword">if</span> (sptSet[v] == <span class="hljs-keyword">false</span> &amp;&amp; dist[v] &lt;= min) 
+        { 
+            min = dist[v]; 
+            min_index = v; 
+        } 
+
+    <span class="hljs-keyword">return</span> min_index; 
+}
+</code></pre>
+<h2 id="printdistances-given-dist">printDistances given dist[]</h2>
+<pre><code class="lang-java"><span class="hljs-comment">// A utility function to print the constructed distance array </span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printSolution</span><span class="hljs-params">(<span class="hljs-keyword">int</span> dist[])</span> 
+</span>{ 
+    System.out.println(<span class="hljs-string">&quot;Vertex   Distance from Source&quot;</span>); 
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; dist.length; i++) 
+        System.out.println(i+<span class="hljs-string">&quot; tt &quot;</span>+dist[i]); 
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">// Funtion that implements Dijkstra&apos;s single source shortest path </span>
+<span class="hljs-comment">// algorithm for a graph represented using adjacency matrix </span>
+<span class="hljs-comment">// representation </span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">dijkstra</span><span class="hljs-params">(<span class="hljs-keyword">int</span> graph[][], <span class="hljs-keyword">int</span> src)</span> 
+</span>{ 
+    <span class="hljs-keyword">int</span> dist[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[V]; <span class="hljs-comment">// The output array. dist[i] will hold </span>
+                              <span class="hljs-comment">// the shortest distance from src to i </span>
+
+    <span class="hljs-comment">// sptSet[i] will true if vertex i is included in shortest </span>
+    <span class="hljs-comment">// path tree or shortest distance from src to i is finalized </span>
+    Boolean sptSet[] = <span class="hljs-keyword">new</span> Boolean[V]; 
+
+    <span class="hljs-comment">// Initialize all distances as INFINITE and stpSet[] as false </span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; V; i++) 
+    { 
+        dist[i] = Integer.MAX_VALUE; 
+        sptSet[i] = <span class="hljs-keyword">false</span>; 
+    } 
+
+    <span class="hljs-comment">// Distance of source vertex from itself is always 0 </span>
+    dist[src] = <span class="hljs-number">0</span>; 
+
+    <span class="hljs-comment">// Find shortest path for all vertices </span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> count = <span class="hljs-number">0</span>; count &lt; V-<span class="hljs-number">1</span>; count++) 
+    { 
+        <span class="hljs-comment">// Pick the minimum distance vertex from the set of vertices </span>
+        <span class="hljs-comment">// not yet processed. u is always equal to src in first </span>
+        <span class="hljs-comment">// iteration. </span>
+        <span class="hljs-keyword">int</span> u = minDistance(dist, sptSet); 
+
+        <span class="hljs-comment">// Mark the picked vertex as processed </span>
+        sptSet[u] = <span class="hljs-keyword">true</span>; 
+
+        <span class="hljs-comment">// Update dist value of the adjacent vertices of the </span>
+        <span class="hljs-comment">// picked vertex. </span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> v = <span class="hljs-number">0</span>; v &lt; V; v++) 
+
+            <span class="hljs-comment">// Update dist[v] only if is not in sptSet, there is an </span>
+            <span class="hljs-comment">// edge from u to v, and total weight of path from src to </span>
+            <span class="hljs-comment">// v through u is smaller than current value of dist[v] </span>
+            <span class="hljs-keyword">if</span> (!sptSet[v] &amp;&amp; graph[u][v]!=<span class="hljs-number">0</span> &amp;&amp; 
+                    dist[u] != Integer.MAX_VALUE &amp;&amp; 
+                    dist[u]+graph[u][v] &lt; dist[v]) 
+                dist[v] = dist[u] + graph[u][v]; 
+    } 
+
+    <span class="hljs-comment">// print the constructed distance array </span>
+    printSolution(dist, V); 
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3.prim.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: u1 prim's MST">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"u1 dijkstra","level":"1.2.5","depth":2,"next":{"title":"[u2. Dynamic Programming]","level":"1.3","depth":1,"ref":"","articles":[{"title":"0. Dynamic Programming","level":"1.3.1","depth":2,"path":"u2/0.dp.md","ref":"u2/0.dp.md","articles":[]},{"title":"1. subproblem","level":"1.3.2","depth":2,"path":"u2/1.subproblem.md","ref":"u2/1.subproblem.md","articles":[]},{"title":"2. knapsakc","level":"1.3.3","depth":2,"path":"u2/2.knapsack.md","ref":"u2/2.knapsack.md","articles":[]},{"title":"3. partition","level":"1.3.4","depth":2,"path":"u2/3.partition.md","ref":"u2/3.partition.md","articles":[]},{"title":"4. subsetSum","level":"1.3.5","depth":2,"path":"u2/4.subsetSum.md","ref":"u2/4.subsetSum.md","articles":[]}]},"previous":{"title":"u1 prim's MST","level":"1.2.4","depth":2,"path":"u1/3.prim.md","ref":"u1/3.prim.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"u1/4.dijkstra.md","mtime":"2019-03-16T00:25:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-19T00:41:40.603Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

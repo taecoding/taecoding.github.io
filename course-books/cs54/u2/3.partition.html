@@ -1,0 +1,593 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3. partition · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="4.subsetSum.html" />
+    
+    
+    <link rel="prev" href="2.knapsack.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    [u1. Greedy Algo]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../u1/0.greedy.html">
+            
+                <a href="../u1/0.greedy.html">
+            
+                    
+                    u1 Greedy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../u1/1.activity.html">
+            
+                <a href="../u1/1.activity.html">
+            
+                    
+                    u1 Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../u1/2.kruskal.html">
+            
+                <a href="../u1/2.kruskal.html">
+            
+                    
+                    u1 Kruskal's MST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../u1/3.prim.html">
+            
+                <a href="../u1/3.prim.html">
+            
+                    
+                    u1 prim's MST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../u1/4.dijkstra.html">
+            
+                <a href="../u1/4.dijkstra.html">
+            
+                    
+                    u1 dijkstra
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    [u2. Dynamic Programming]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="0.dp.html">
+            
+                <a href="0.dp.html">
+            
+                    
+                    0. Dynamic Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="1.subproblem.html">
+            
+                <a href="1.subproblem.html">
+            
+                    
+                    1. subproblem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="2.knapsack.html">
+            
+                <a href="2.knapsack.html">
+            
+                    
+                    2. knapsakc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="3.partition.html">
+            
+                <a href="3.partition.html">
+            
+                    
+                    3. partition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="4.subsetSum.html">
+            
+                <a href="4.subsetSum.html">
+            
+                    
+                    4. subsetSum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3. partition</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="partition">Partition</h1>
+<h2 id="problem-statement">Problem Statement</h2>
+<p>Given a set of positive numbers, find if we can partition it into two subsets such that the sum of elements in both the subsets is equal.</p>
+<h3 id="example-1">Example 1:</h3>
+<p>Input: {1, 2, 3, 4}
+Output: True
+Explanation: The given set can be partitioned into two subsets with equal sum: {1, 4} &amp; {2, 3}</p>
+<h3 id="example-2">Example 2:</h3>
+<p>Input: {1, 1, 3, 4, 7}
+Output: True
+Explanation: The given set can be partitioned into two subsets with equal sum: {1, 3, 4} &amp; {1, 7}</p>
+<h3 id="example-3">Example 3:</h3>
+<p>Input: {2, 3, 4, 6}
+Output: False
+Explanation: The given set cannot be partitioned into two subsets with equal sum.</p>
+<p>This problem looks similar to the 0/1 Knapsack problem, try solving it before moving on to see the solution:</p>
+<pre><code>class PartitionSet {
+
+  static boolean canPartition(int[] num) {
+    //TODO: Write - Your - Code
+    return false;
+  }
+}
+</code></pre><h2 id="basic-solution">Basic Solution</h2>
+<p>This problem follows the 0/1 Knapsack pattern. A basic brute-force solution could be to try all combinations of partitioning the given numbers into two sets to see if any pair of sets has an equal sum.</p>
+<p>Assume if S represents the total sum of all the given numbers, then the two equal subsets must have a sum equal to S/2. This essentially transforms our problem to: &quot;Find a subset of the given numbers that has a total sum of S/2&quot;.</p>
+<p>So our brute-force algorithm will look like:</p>
+<pre><code>for each number &apos;i&apos; 
+  create a new set which INCLUDES number &apos;i&apos; if it does not exceed &apos;S/2&apos;, and recursively 
+      process the remaining numbers
+  create a new set WITHOUT number &apos;i&apos;, and recursively process the remaining items 
+return true if any of the above sets has a sum equal to &apos;S/2&apos;, otherwise return false
+</code></pre><pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PartitionSet</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">canPartition</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] num)</span> </span>{
+    <span class="hljs-keyword">int</span> sum = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; num.length; i++)
+      sum += num[i];
+
+    <span class="hljs-comment">// if &apos;sum&apos; is a an odd number, we can&apos;t have two subsets with equal sum</span>
+    <span class="hljs-keyword">if</span>(sum % <span class="hljs-number">2</span> != <span class="hljs-number">0</span>)
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.canPartitionRecursive(num, sum/<span class="hljs-number">2</span>, <span class="hljs-number">0</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">canPartitionRecursive</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] num, <span class="hljs-keyword">int</span> sum, <span class="hljs-keyword">int</span> currentIndex)</span> </span>{
+    <span class="hljs-comment">// base check</span>
+    <span class="hljs-keyword">if</span> (sum == <span class="hljs-number">0</span>)
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+
+    <span class="hljs-keyword">if</span>(num.length == <span class="hljs-number">0</span> || currentIndex &gt;= num.length)
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-comment">// recursive call after choosing the number at the currentIndex</span>
+    <span class="hljs-comment">// if the number at currentIndex exceeds the sum, we shouldn&apos;t process this</span>
+    <span class="hljs-keyword">if</span>( num[currentIndex] &lt;= sum ) {
+      <span class="hljs-keyword">if</span>(canPartitionRecursive(num, sum - num[currentIndex], currentIndex + <span class="hljs-number">1</span>))
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+
+    <span class="hljs-comment">// recursive call after excluding the number at the currentIndex</span>
+    <span class="hljs-keyword">return</span> canPartitionRecursive(num, sum, currentIndex + <span class="hljs-number">1</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    PartitionSet ps = <span class="hljs-keyword">new</span> PartitionSet();
+    <span class="hljs-keyword">int</span>[] num = {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>};
+    System.out.println(ps.canPartition(num));
+    num = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">7</span>};
+    System.out.println(ps.canPartition(num));
+    num = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>};
+    System.out.println(ps.canPartition(num));
+  }
+}
+</code></pre>
+<p>The time complexity of the above algorithm is exponential O(2^n), where &#x2018;n&#x2019; represents the total number. The space complexity is O(n)O(n), this memory which will be used to store the recursion stack.</p>
+<h2 id="top-down-dynamic-programming-with-memoization">Top-down Dynamic Programming with Memoization</h2>
+<p>We can use memoization to overcome the overlapping sub-problems. As stated in previous lessons, memoization is when we store the results of all the previously solved sub-problems return the results from memory if we encounter a problem that has already been solved.</p>
+<p>Since we need to store the results for every subset and for every possible sum, therefore we will be using a two-dimensional array to store the results of the solved sub-problems. The first dimension of the array will represent different subsets and the second dimension will represent different &#x2018;sums&#x2019; that we can calculate from each subset. These two dimensions of the array can also be inferred from the two changing values (sum and currentIndex) in our recursive function canPartitionRecursive().</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PartitionSet</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">canPartition</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] num)</span> </span>{
+    <span class="hljs-keyword">int</span> sum = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; num.length; i++)
+      sum += num[i];
+
+    <span class="hljs-comment">// if &apos;sum&apos; is a an odd number, we can&apos;t have two subsets with equal sum</span>
+    <span class="hljs-keyword">if</span> (sum % <span class="hljs-number">2</span> != <span class="hljs-number">0</span>)
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+
+    Boolean[][] dp = <span class="hljs-keyword">new</span> Boolean[num.length][sum / <span class="hljs-number">2</span> + <span class="hljs-number">1</span>];
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.canPartitionRecursive(dp, num, sum / <span class="hljs-number">2</span>, <span class="hljs-number">0</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">canPartitionRecursive</span><span class="hljs-params">(Boolean[][] dp, <span class="hljs-keyword">int</span>[] num, <span class="hljs-keyword">int</span> sum, <span class="hljs-keyword">int</span> currentIndex)</span> </span>{
+    <span class="hljs-comment">// base check</span>
+    <span class="hljs-keyword">if</span> (sum == <span class="hljs-number">0</span>)
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+
+    <span class="hljs-keyword">if</span> (num.length == <span class="hljs-number">0</span> || currentIndex &gt;= num.length)
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-comment">// if we have not already processed a similar problem</span>
+    <span class="hljs-keyword">if</span> (dp[currentIndex][sum] == <span class="hljs-keyword">null</span>) {
+      <span class="hljs-comment">// recursive call after choosing the number at the currentIndex</span>
+      <span class="hljs-comment">// if the number at currentIndex exceeds the sum, we shouldn&apos;t process this</span>
+      <span class="hljs-keyword">if</span> (num[currentIndex] &lt;= sum) {
+        <span class="hljs-keyword">if</span> (canPartitionRecursive(dp, num, sum - num[currentIndex], currentIndex + <span class="hljs-number">1</span>)) {
+          dp[currentIndex][sum] = <span class="hljs-keyword">true</span>;
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+        }
+      }
+
+      <span class="hljs-comment">// recursive call after excluding the number at the currentIndex</span>
+      dp[currentIndex][sum] = canPartitionRecursive(dp, num, sum, currentIndex + <span class="hljs-number">1</span>);
+    }
+
+    <span class="hljs-keyword">return</span> dp[currentIndex][sum];
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    PartitionSet ps = <span class="hljs-keyword">new</span> PartitionSet();
+    <span class="hljs-keyword">int</span>[] num = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span> };
+    System.out.println(ps.canPartition(num));
+    num = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[] { <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">7</span> };
+    System.out.println(ps.canPartition(num));
+    num = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[] { <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span> };
+    System.out.println(ps.canPartition(num));
+  }
+}
+</code></pre>
+<p>The above algorithm has time and space complexity of O(N*S)O(N&#x2217;S), where &#x2018;N&#x2019; represents total numbers and &#x2018;S&#x2019; is the total sum of all the numbers.</p>
+<h2 id="bottom-up-dynamic-programming">Bottom-up Dynamic Programming</h2>
+<p>Let&#x2019;s try to populate our dp[][] array from the above solution, working in a bottom-up fashion. Essentially, we want to find if we can make all possible sums with every subset. This means, dp[i][s] will be &#x2018;true&#x2019; if we can make sum &#x2018;s&#x2019; from the first &#x2018;i&#x2019; numbers.</p>
+<p>So, for each number at index &#x2018;i&#x2019; (0 &lt;= i &lt; num.length) and sum &#x2018;s&#x2019; (0 &lt;= s &lt;= S/2), we have two options:</p>
+<p>Exclude the number. In this case, we will see if we can get &#x2018;s&#x2019; from the subset excluding this number: dp[i-1][s]
+Include the number if its value is not more than &#x2018;s&#x2019;. In this case, we will see if we can find a subset to get the remaining sum: dp[i-1][s-num[i]]
+If either of the two above scenarios is true, we can find a subset of numbers with a sum equal to &#x2018;s&#x2019;.</p>
+<p>Let&#x2019;s start with our base case of zero capacity:</p>
+<p>From the above visualization, we can clearly see that it is possible to partition the given set into two subsets with equal sums, as shown by bottom-right cell: dp[3][5] =&gt; T</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PartitionSet</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">canPartition</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] num)</span> </span>{
+    <span class="hljs-keyword">int</span> n = num.length;
+    <span class="hljs-comment">// find the total sum</span>
+    <span class="hljs-keyword">int</span> sum = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)
+      sum += num[i];
+
+    <span class="hljs-comment">// if &apos;sum&apos; is a an odd number, we can&apos;t have two subsets with same total</span>
+    <span class="hljs-keyword">if</span>(sum % <span class="hljs-number">2</span> != <span class="hljs-number">0</span>)
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-comment">// we are trying to find a subset of given numbers that has a total sum of &#x2018;sum/2&#x2019;.</span>
+    sum /= <span class="hljs-number">2</span>;
+
+    <span class="hljs-keyword">boolean</span>[][] dp = <span class="hljs-keyword">new</span> <span class="hljs-keyword">boolean</span>[n][sum + <span class="hljs-number">1</span>];
+
+    <span class="hljs-comment">// populate the sum=0 columns, as we can always for &apos;0&apos; sum with an empty set</span>
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i &lt; n; i++)
+      dp[i][<span class="hljs-number">0</span>] = <span class="hljs-keyword">true</span>;
+
+    <span class="hljs-comment">// with only one number, we can form a subset only when the required sum is equal to its value</span>
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> s=<span class="hljs-number">1</span>; s &lt;= sum ; s++) {
+      dp[<span class="hljs-number">0</span>][s] = (num[<span class="hljs-number">0</span>] == s ? <span class="hljs-keyword">true</span> : <span class="hljs-keyword">false</span>);
+    }
+
+    <span class="hljs-comment">// process all subsets for all sums</span>
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>; i &lt; n; i++) {
+      <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> s=<span class="hljs-number">1</span>; s &lt;= sum; s++) {
+        <span class="hljs-comment">// if we can get the sum &apos;s&apos; without the number at index &apos;i&apos;</span>
+        <span class="hljs-keyword">if</span>(dp[i-<span class="hljs-number">1</span>][s]) {
+          dp[i][s] = dp[i-<span class="hljs-number">1</span>][s];
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (s &gt;= num[i]) { <span class="hljs-comment">// else if we can find a subset to get the remaining sum</span>
+          dp[i][s] = dp[i-<span class="hljs-number">1</span>][s-num[i]];
+        }
+      }
+    }
+
+    <span class="hljs-comment">// the bottom-right corner will have our answer.</span>
+    <span class="hljs-keyword">return</span> dp[n-<span class="hljs-number">1</span>][sum];
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    PartitionSet ps = <span class="hljs-keyword">new</span> PartitionSet();
+    <span class="hljs-keyword">int</span>[] num = {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>};
+    System.out.println(ps.canPartition(num));
+    num = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">7</span>};
+    System.out.println(ps.canPartition(num));
+    num = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>};
+    System.out.println(ps.canPartition(num));
+  }
+}
+</code></pre>
+<p>The above solution has time and space complexity of O(N*S)O(N&#x2217;S), where &#x2018;N&#x2019; represents total numbers and &#x2018;S&#x2019; is the total sum of all the numbers.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2.knapsack.html" class="navigation navigation-prev " aria-label="Previous page: 2. knapsakc">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="4.subsetSum.html" class="navigation navigation-next " aria-label="Next page: 4. subsetSum">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3. partition","level":"1.3.4","depth":2,"next":{"title":"4. subsetSum","level":"1.3.5","depth":2,"path":"u2/4.subsetSum.md","ref":"u2/4.subsetSum.md","articles":[]},"previous":{"title":"2. knapsakc","level":"1.3.3","depth":2,"path":"u2/2.knapsack.md","ref":"u2/2.knapsack.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"u2/3.partition.md","mtime":"2019-05-19T00:06:49.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-19T00:41:40.603Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
