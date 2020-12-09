@@ -1,0 +1,42 @@
+.gitbook-link {
+    display: none !important;
+}
+
+h1 {
+    font-family: Arial; 
+    font-size:2.75em;
+    color:purple; 
+    font-style:bold;
+}
+
+h2 {
+    font-family: Arial; 
+    font-size:1.5em;
+    color:#2462C0; 
+    font-style:bold;
+}
+
+.track {
+    font-family: Arial; 
+    font-size:1.3em;
+    font-style:bold;
+    margin-top: 0;
+    margin-bottom: 0;    
+}
+
+.course {
+    font-family: Arial; 
+    font-size:1.3em;
+    font-style:bold;
+    margin-top: 0;
+    margin-bottom: 0;    
+}
+
+.cimg {
+    margin: 10px;
+}
+
+.book-header {
+    border-bottom: 4px solid;
+    border-color: orange;
+}

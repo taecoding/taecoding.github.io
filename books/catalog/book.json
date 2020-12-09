@@ -1,0 +1,28 @@
+{
+    "title": "TAE Coding",
+    "styles": {
+        "website": "styles/gitbook.css"
+    },
+    "plugins": ["links", "-sharing"],
+    "pluginsConfig": {
+        "links": {
+            "links": [
+                {
+                    "label": "TAE coding",
+                    "icon": "fa fa-home",
+                    "url": "http://www.taecoding.com"
+                },
+                {
+                    "label": "schedule",
+                    "icon": "fa fa-cloud-download",
+                    "url": "http://www.taecoding.com/resources/2018.9Schedule.pdf"
+                },
+                {
+                    "label": "catalog",
+                    "icon": "fa fa-cloud-download",
+                    "url": "http://www.taecoding.com/resources/2018CatalogAll.pdf"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.t-heading {
+  /* margin-left: -70px;  */
+  text-align: left;
+}
+
+.t-heading .t-title {
+  display: inline-block;
+  position: relative;
+  padding-left: 6.5rem;
+}
+
+.t-heading .t-title::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: inherit;
+  top: 50%;
+  width: 5rem;
+  left: 0;
+}
+
+.t-heading .t-title::after {
+  left: 0;
+}

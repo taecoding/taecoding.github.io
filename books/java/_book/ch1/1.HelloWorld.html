@@ -1,0 +1,379 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1. Hello World · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2.Variable.html" />
+    
+    
+    <link rel="prev" href="ch1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../EnvSetup.html">
+            
+                <a href="../EnvSetup.html">
+            
+                    
+                    Environment Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Basic Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="1.HelloWorld.html">
+            
+                <a href="1.HelloWorld.html">
+            
+                    
+                    1. Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.Variable.html">
+            
+                <a href="2.Variable.html">
+            
+                    
+                    2. Variable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3.UserInput.html">
+            
+                <a href="3.UserInput.html">
+            
+                    
+                    3. User Input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="4.ArithmeticExpressions.html">
+            
+                <a href="4.ArithmeticExpressions.html">
+            
+                    
+                    4. Arithmetic Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1. Hello World</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="writing-hello-world">Writing Hello World</h1>
+<p>Writing a program that prints &quot;Hello World&quot; to the console.</p>
+<pre><code class="lang-code">public class HelloWorld {
+    public static void main(String[] args){
+        System.out.println(&quot;Hello, world!&quot;);
+    }
+}
+</code></pre>
+<p>There are a few key parts to pay attention to here:</p>
+<ul>
+<li>class: A unit of code that is the basic building block of program.</li>
+<li>main method: the first method called by JVM.</li>
+<li>public static: accessible by any caller(JVM)</li>
+<li>System.out.println: print out the argument to the console</li>
+<li>statement: end with semicolon</li>
+</ul>
+<h2 id="escape-sequences">Escape sequences</h2>
+<p>how to include a quotation mark inside a string literal?</p>
+<ul>
+<li>escape sequences are tow-character sequences that are used to represent special characters.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Sequence</th>
+<th style="text-align:left">Represents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">\t</td>
+<td style="text-align:left">tab</td>
+</tr>
+<tr>
+<td style="text-align:center">\n</td>
+<td style="text-align:left">new line</td>
+</tr>
+<tr>
+<td style="text-align:center">\&quot;</td>
+<td style="text-align:left">quotation</td>
+</tr>
+<tr>
+<td style="text-align:center">\\</td>
+<td style="text-align:left">backslash</td>
+</tr>
+</tbody>
+</table>
+<h1 id="print-multiple-lines">Print Multiple lines</h1>
+<p>Please write a program to introduce yourself. Print out your name and your age in the separate line.</p>
+<pre><code>My name is Taehee Jung.
+I am 40 years old.
+</code></pre><h1 id="ascii-art">ASCII Art</h1>
+<p>Please write a program that outputs exactly this drawing.</p>
+<pre><code>   /)___
+  /     O|___
+ /           )
+/       )___/
+</code></pre><h1 id="escape-sequence">Escape Sequence</h1>
+<p>Please write a program that print the floowing.</p>
+<pre><code>Steve Jobs said &quot;Everyone need to learn coding&quot;.
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch1.html" class="navigation navigation-prev " aria-label="Previous page: Basic Java">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2.Variable.html" class="navigation navigation-next " aria-label="Next page: 2. Variable">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1. Hello World","level":"1.3.1","depth":2,"next":{"title":"2. Variable","level":"1.3.2","depth":2,"path":"ch1/2.Variable.md","ref":"ch1/2.Variable.md","articles":[]},"previous":{"title":"Basic Java","level":"1.3","depth":1,"path":"ch1/ch1.md","ref":"ch1/ch1.md","articles":[{"title":"1. Hello World","level":"1.3.1","depth":2,"path":"ch1/1.HelloWorld.md","ref":"ch1/1.HelloWorld.md","articles":[]},{"title":"2. Variable","level":"1.3.2","depth":2,"path":"ch1/2.Variable.md","ref":"ch1/2.Variable.md","articles":[]},{"title":"3. User Input","level":"1.3.3","depth":2,"path":"ch1/3.UserInput.md","ref":"ch1/3.UserInput.md","articles":[]},{"title":"4. Arithmetic Expressions","level":"1.3.4","depth":2,"path":"ch1/4.ArithmeticExpressions.md","ref":"ch1/4.ArithmeticExpressions.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch1/1.HelloWorld.md","mtime":"2017-01-22T18:17:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-19T02:08:35.819Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,424 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4. ControlFlow · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ch06/1_turtle-move.html" />
+    
+    
+    <link rel="prev" href="3.UserInput.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../EnvSetup.html">
+            
+                <a href="../EnvSetup.html">
+            
+                    
+                    Environment Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Basic Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1.HelloWorld.html">
+            
+                <a href="1.HelloWorld.html">
+            
+                    
+                    1. HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.Variable.html">
+            
+                <a href="2.Variable.html">
+            
+                    
+                    2. Variable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3.UserInput.html">
+            
+                <a href="3.UserInput.html">
+            
+                    
+                    3. UserInput
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="4.ControlFlow.html">
+            
+                <a href="4.ControlFlow.html">
+            
+                    
+                    4. ControlFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../ch06/1_turtle-move.html">
+            
+                <a href="../ch06/1_turtle-move.html">
+            
+                    
+                    6. Turtle Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../ch07/turtle_function.html">
+            
+                <a href="../ch07/turtle_function.html">
+            
+                    
+                    7. Turtle Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4. ControlFlow</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="control-flow">Control Flow</h1>
+<h2 id="boolean-expression">Boolean Expression</h2>
+<ul>
+<li>True or False</li>
+<li>Did you bring lunch?</li>
+<li>broughtFood = True</li>
+</ul>
+<h2 id="if-statement">If Statement</h2>
+<ul>
+<li>Non-Sequential Programming</li>
+<li>Comparison Operator</li>
+<li>Logical Operator</li>
+</ul>
+<pre><code>if (score &gt;= 70):
+  print (&#x201C;Pass&#x201D;)
+else:
+  print (&#x201C;Fail&#x201D;)
+</code></pre><h3 id="comparison-operator">Comparison Operator</h3>
+<ul>
+<li>not equal</li>
+<li>greater than</li>
+<li>greater than or equal to</li>
+</ul>
+<pre><code>if (number &lt; 1):
+    print (&#x201C;Not between 1 and 10&#x201D;)
+elif (number &gt; 10):
+    print (&#x201C;Not between 1 and 10&#x201D;)
+else:
+    print (&#x201C;Between 1 and 10&#x201D;)
+</code></pre><h3 id="logical-operator">Logical Operator</h3>
+<ul>
+<li>and</li>
+<li>or</li>
+<li>not <pre><code>if (number &lt; 1):
+  print &#x201C;Not between 1 and 10&#x201D;
+elif (number &gt; 10):
+  print &#x201C;Not between 1 and 10&#x201D;
+else:
+  print &#x201C;Between 1 and 10&#x201D;
+</code></pre></li>
+</ul>
+<h3 id="ex1-rainingpy">EX1: raining.py</h3>
+<p>Write a program that has a Boolean variable that represents whether or not it is raining outside. Your program should print I&apos;m going to eat lunch inside! if it is raining, and I&apos;m going to eat lunch outside! if it is not raining.</p>
+<h3 id="ex2-agetovotepy">EX2: AgeToVote.py</h3>
+<p>Ask the user for their age, and store it in a variable
+Use an if-else statement with the proper comparison operator to print You are old enough to vote! if the person&#x2019;s age is at least 18, and You are not old enough to vote. otherwise
+An example run of your program might look like this:</p>
+<pre><code>Age: 19
+You are old enough to vote!
+&#x2026; or like this:
+Age: 16
+You are not old enough to vote.
+</code></pre><h3 id="ex3-restaurantpy">Ex3: Restaurant.py</h3>
+<p>Write a program that asks the user for their name using input. It should have another string variable that represents the name on a particular table reservation in a restaurant. The program should print Right this way! if the user&#x2019;s name matches the name on the reservation, and Sorry, we don&apos;t have a reservation under that name. otherwise.
+An example run of your program might look like this:</p>
+<pre><code>Name: Shonda
+Right this way!
+&#x2026; or like this:
+Name: Mel
+Sorry, we don&apos;t have a reservation under that name.
+</code></pre><h2 id="short-circuit-evaluation">Short Circuit Evaluation</h2>
+<ul>
+<li>True or (anything) =&gt; always True</li>
+<li>False or (anyting) =&gt; alwyas False</li>
+</ul>
+<p><img src="../images/ShortCircuitTrue.png">
+<img src="../images/ShortCircuitFalse.png"></p>
+<h2 id="de-morganss-laws">DE Morgans&apos;s Laws</h2>
+<p><img src="../demorgan.png"></p>
+<h2 id="floating-point-number">Floating Point number</h2>
+<pre><code>x = 0.0037 / 100
+if ( x!= 0.000037):
+    print(&quot;It is not equal&quot;)
+</code></pre><p>solution: round(0.0037/100, 6)</p>
+<h2 id="function">Function</h2>
+<p>```
+def printHelloWorld():
+    print(&quot;Hell World!!&quot;)</p>
+<p>printHelloWorld()</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3.UserInput.html" class="navigation navigation-prev " aria-label="Previous page: 3. UserInput">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ch06/1_turtle-move.html" class="navigation navigation-next " aria-label="Next page: 6. Turtle Drawing">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4. ControlFlow","level":"1.3.4","depth":2,"next":{"title":"6. Turtle Drawing","level":"1.3.5","depth":2,"path":"ch06/1_turtle-move.md","ref":"ch06/1_turtle-move.md","articles":[]},"previous":{"title":"3. UserInput","level":"1.3.3","depth":2,"path":"ch1/3.UserInput.md","ref":"ch1/3.UserInput.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch1/4.ControlFlow.md","mtime":"2017-01-22T18:17:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-19T21:34:40.580Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
